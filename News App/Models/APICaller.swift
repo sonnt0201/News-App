@@ -21,6 +21,7 @@ final class APICaller {
         let request = AF.request(url)
         request.validate().responseDecodable(of: HeadlinesResponse.self) { response in
             completion(response.result)
+//            print(response)
         }
     }
 }
